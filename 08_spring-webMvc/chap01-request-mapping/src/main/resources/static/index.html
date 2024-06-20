@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+
+<div>
+    <h3> 1. 링크태그 이용 ① </h3>
+    <a href="https://naver.com">네이버 홈페이지 들어가기</a>
+</div>
+<br>
+
+<div>
+    <h3> 2. 링크태그 이용 ② </h3>
+    <a href="orders/regist">get 방식의 주문핸들러 요청</a>
+</div>
+<br>
+
+<div>
+    <h2>주문 등록</h2>
+    <form action="/regist" method="post">
+        <label for="message">메시지:</label><br>
+        <input type="text" id="message" name="message"><br><br>
+        <button type="submit">주문 등록</button>
+    </form>
+</div>
+
+<!--<div>-->
+<!--    <h3> 3. POST 요청 </h3>-->
+<!--    <form action="orders/regist" method="post">-->
+
+<!--        <label for="orderName">주문 이름:</label>-->
+<!--        <input type="text" id="orderName" name="orderName" required>-->
+<!--        <br><br>-->
+
+<!--        <label for="orderQuantity">주문 수량:</label>-->
+<!--        <input type="number" id="orderQuantity" name="orderQuantity" required>-->
+<!--        <br><br>-->
+
+<!--        <input type="submit" value="전송"/>-->
+
+<!--    </form>-->
+<!--</div>-->
+
+<div>
+    <h5> post 요청 </h5>
+    <h2>주문 정보 입력</h2>
+    <form action="postMapping" method="post">
+        <label for="orderName">주문명:</label><br>
+        <input type="text" id="orderName" name="orderName"><br>
+
+        <label for="orderQuantity">수량:</label><br>
+        <input type="number" id="orderQuantity" name="orderQuantity"><br><br>
+
+        <button type="submit">주문 등록</button>
+    </form>
+</div>
+
+
+</body>
+</html>
